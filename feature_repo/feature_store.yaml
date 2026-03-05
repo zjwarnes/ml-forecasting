@@ -1,0 +1,4 @@
+project: demand_forecast
+registry: data/registry.db
+provider: local
+entity_key_serialization_version: 2

@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Terraform — state files contain secrets (db passwords, IPs, etc.)
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.*
+terraform/*.tfvars
+!terraform/terraform.tfvars.example
+*.tfstate
+*.tfstate.*
+
+# Environment / secrets
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+service-account*.json
+
+# Data — generated at runtime, may contain PII
+data/*.parquet
+data/*.db
+data/*.jsonl
+data/*.json
+data/experiments/
+
+# MLflow local artifacts
+mlruns/
+mlartifacts/
+
+# PyTorch / NeuralForecast checkpoints
+lightning_logs/
+checkpoints/
+*.ckpt
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/

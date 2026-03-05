@@ -1,0 +1,5 @@
+project_id  = "your-gcp-project-id"
+region      = "us-central1"
+environment = "dev"
+db_password = "change-me-in-production"
+alert_email = "your-email@example.com"
